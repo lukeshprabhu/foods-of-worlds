@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h2>My Orders</h2>{% for o in orders %}<div class="card"><h3>{{o.order_number}}</h3><p>{{o.created_at}} | {{o.order_status}}</p><b>₹{{o.total_amount}}</b></div>{% else %}<p>No orders yet.</p>{% endfor %}{% endblock %}

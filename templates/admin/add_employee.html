@@ -1,0 +1,13 @@
+{% extends "admin/base.html" %}{% block content %}<form class="form" method="post"><h2>Add Employee</h2><label>Employee Number</label><input name="employee_number" required>
+<label>Full Name</label><input name="full_name" required>
+<label>Phone</label><input name="phone"><label>Email</label><input name="email" type="email">
+<label>Date of Birth</label><input name="date_of_birth" type="date">
+<label>Nationality</label><input name="nationality">
+<label>Designation</label><select name="designation"><option>Manager</option><option>Chef</option><option>Cook</option><option>Delivery Staff</option><option>Server</option><option>Cashier</option><option>Cleaner</option><option>Supervisor</option><option>Other</option></select>
+<label>Employment Status</label><select name="employment_status"><option>Active</option><option>Inactive</option><option>On Leave</option><option>Suspended</option><option>Resigned</option><option>Terminated</option></select>
+<label>Joining Date</label><input name="joining_date" type="date">
+<label>Address</label><textarea name="address"></textarea><label>Emergency Contact</label><input name="emergency_contact"><label>Emergency Phone</label><input name="emergency_phone">
+<h3>Passport</h3><input name="passport_number" placeholder="Passport number"><input name="passport_issue_date" type="date"><input name="passport_expiry_date" type="date">
+<h3>Visa</h3><input name="visa_number" placeholder="Visa number"><input name="visa_issue_date" type="date"><input name="visa_expiry_date" type="date">
+<h3>ID</h3><input name="id_number" placeholder="ID number"><input name="id_issue_date" type="date"><input name="id_expiry_date" type="date">
+<br><button class="btn">Save Employee</button></form>{% endblock %}

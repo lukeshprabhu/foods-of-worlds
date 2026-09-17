@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h2>My Favorites</h2><div class="grid">{% for f in foods %}<div class="card"><h3>{{f.name}}</h3><p>₹{{f.price}}</p><button class="btn" onclick='addToCart({{f.id}},{{f.name|tojson}},{{f.price}})'>Add to Cart</button></div>{% else %}<p>No favorites yet.</p>{% endfor %}</div>{% endblock %}
